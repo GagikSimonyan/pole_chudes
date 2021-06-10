@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 970px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.main {
+  background: url("./../images/pole.jpg") center/cover no-repeat;
+  position: relative;
+  overflow: hidden; }
+  .main__block {
+    padding: 100px 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.question {
+  background-color: #fff;
+  padding: 10px; }
+  .question__text {
+    font-size: 18px;
+    text-align: center; }
+
+.word {
+  display: flex;
+  justify-content: center; }
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.letter__item, .word__item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: 700;
+  border: 1px solid #000;
+  margin: 10px;
+  cursor: pointer; }
+
+.word__item {
+  background-color: lightblue; }
+
+.chance {
+  background-color: rgba(255, 255, 255, 0.555);
+  font-size: 40px;
+  font-weight: 700;
+  color: red;
+  padding: 10px; }
+
+.rightAnswer, .wrongAnswer, .gameOver {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease 0s; }
+
+.rightAnswer {
+  background: url("./../images/like.png") center/cover no-repeat; }
+
+.wrongAnswer {
+  background: url("./../images/wrong.jpg") center/cover no-repeat; }
+
+.gameOver {
+  background: url("./../images/win.jpg") center/cover no-repeat; }
+
+.hidden {
+  font-size: 0; }
+
+.disable {
+  background-color: gray;
+  cursor: text; }
+
+.showBlock {
+  right: 0; }
+
+.hideBlock {
+  right: -450px; }
